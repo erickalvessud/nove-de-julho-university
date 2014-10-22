@@ -6,7 +6,7 @@
 numero de dias, em numero de horas, em numero de minutos e em numero de
 segundos.*/
 int main(){
-	
+	//variaveis inicializadas.
 	int idade = 0;
 	
 	int dia = 0;
