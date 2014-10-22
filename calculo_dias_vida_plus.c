@@ -14,11 +14,21 @@ int main(){
 	int hora = 0;
 	int minuto = 0;
 	int segundo = 0;
-	char data[] =  "02-08-2014";
-	char *a;
 	
-	a = strtok(data, "-");
+	char data[] =  "02-08-2014";
+
+	int i;
+	char c = 'a';
+	for(i = 0; (i < sizeof(data)/sizeof(data[0])); i++){
+		char c = data[i];
+		if (c == 0) {
+			break;
+		}
+		printf("Data: %c \n", c);
+	}
 /*
+	char *dataSplited;
+	a = strtok(data, "-");
 	while(a){
 		printf("Data: %s \n", a);
 		a = strtok(NULL, "-");
