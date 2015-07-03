@@ -18,7 +18,7 @@ void selectionSort(int numList[], int size){
     int i, j, min, temp;
 
     for ( i = 0; i < (size - 1); i++) {
-        // assume first index is the minimus.
+        // assume current index is the minimus.
         min = i;
 
         // search to the minimal value.
